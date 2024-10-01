@@ -67,7 +67,6 @@ function Hero({ inputEmail, setInputEmail, isError, setIsError, setThankYou }) {
             <img src="./images/icon-arrow.svg" alt="" />
           </button>
         </form>
-        <img src="./images/thank-yo.svg" alt="" />
       </div>
     </section>
   );
