@@ -30,11 +30,13 @@ function Hero({ inputEmail, setInputEmail, isError, setIsError, setThankYou }) {
 
   return (
     <section className={styles.hero}>
-      <img
-        srcSet="./images/hero-mobile.jpg 900w, ./images/hero-desktop.jpg 1000w"
+    <div className={styles.heroImg}>
+    <img
+        srcSet="./images/hero-mobile.jpg 1099w, ./images/hero-desktop.jpg 1100w"
         src="./images/hero-desktop.jpg"
         alt=""
       />
+    </div>
 
       <div className={styles.heroContent}>
       <img src="./images/bg-pattern-desktop.svg" alt="" className={styles.heroBgDesktop} />
