@@ -1,0 +1,10 @@
+.navigation {
+    padding-block: 1.5rem;
+    padding-left: 5%;
+}
+
+@media (min-width: 62.5em) {
+    .navigation {
+        display: none;
+    }
+}

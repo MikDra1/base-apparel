@@ -1,0 +1,183 @@
+.heroContent {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  max-width: 10ch;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero > img {
+  width: 100%;
+}
+
+.hero h1 span {
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+}
+
+.hero p {
+  color: var(--Desaturated-Red);
+  margin-bottom: 2rem;
+}
+
+.hero form {
+  display: grid;
+  border: none;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0 0 0 1.5rem;
+  border-radius: 100vw;
+  position: relative;
+}
+
+.hero input {
+  outline: none;
+  border: 1px solid hsl(0, 74%, 74%);
+  border-radius: 100vw;
+  background-color: transparent;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.hero input::placeholder {
+  color: var(--Desaturated-Red);
+}
+
+.hero button {
+  background: var(--gradient-2);
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 100vw;
+  margin: -0.06rem;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 2rem rgba(206, 151, 151, 0.4);
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.hero button:hover {
+  background: #F9D3D0;
+  scale: 1.05;
+}
+
+.heroLogo {
+  display: none;
+  position: absolute;
+  top: 8%;
+}
+
+.hero label {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 1.5rem;
+  color: var(--Soft-Red);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.errorIcon {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.visible.visible {
+  opacity: 1;
+}
+
+@media (min-width: 22.5em) {
+  .hero form {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(0, 74%, 74%);
+  }
+
+  .hero input {
+    padding: 0;
+    border: none;
+  }
+
+  .hero button {
+    width: auto;
+    margin-inline: 0;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .hero {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+  }
+
+  .heroContent {
+    order: -1;
+    text-align: start;
+    padding: 10%;
+  }
+
+  .heroContent h1 {
+    margin-left: 0;
+    /* margin-right: auto; */
+    font-size: 3.75rem;
+    letter-spacing: 1rem;
+    max-width: 18ch;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .hero > img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .hero form {
+    margin-left: 0;
+    width: 89%;
+    justify-content: space-between;
+  }
+
+  .heroLogo {
+    display: block;
+  }
+
+  .hero p {
+    margin-bottom: 2.5rem;
+    max-width: 45ch;
+  }
+
+  .hero form {
+    max-width: 30rem;
+  }
+
+  .hero button {
+    padding: 1.25rem 2.5rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .heroContent {
+    padding: 15%;
+    margin-top: 4rem;
+  }
+
+  .hero {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 95rem) {
+  .heroContent {
+    padding: 20%;
+  }
+}
