@@ -1,7 +1,10 @@
+
 .heroContent {
   width: 90%;
   margin-inline: auto;
   text-align: center;
+  position: relative;
+
 }
 
 .hero h1 {
@@ -92,7 +95,30 @@
   opacity: 1;
 }
 
+.heroBgDesktop {
+  display: block;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
 @media (min-width: 22.5em) {
+
+
+
+  .heroContent {
+
+    width: 100%;
+  }
+
+  .heroContentContent {
+    width: 90%;
+    margin-inline: auto;
+  }
+
   .hero form {
     display: flex;
     align-items: center;
@@ -167,7 +193,7 @@
 @media (min-width: 75em) {
   .heroContent {
     padding: 15%;
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
 
   .hero {

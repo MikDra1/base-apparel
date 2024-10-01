@@ -37,6 +37,9 @@ function Hero({ inputEmail, setInputEmail, isError, setIsError, setThankYou }) {
       />
 
       <div className={styles.heroContent}>
+      <img src="./images/bg-pattern-desktop.svg" alt="" className={styles.heroBgDesktop} />
+
+        <div className={styles.heroContentContent}>
         <img src="./images/logo.svg" alt="" className={styles.heroLogo} />
         <h1>
           <span>we&apos;re</span> coming soon
@@ -67,6 +70,7 @@ function Hero({ inputEmail, setInputEmail, isError, setIsError, setThankYou }) {
             <img src="./images/icon-arrow.svg" alt="" />
           </button>
         </form>
+        </div>
       </div>
     </section>
   );
