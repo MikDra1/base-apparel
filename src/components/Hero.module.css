@@ -199,12 +199,10 @@
   }
 }
 
-@media (min-width: 75em) {
-
-
+@media (min-height: 750px) {
   .hero {
-    max-height: 100vh;
-    overflow: hidden;
+      max-height: 100vh;
+      overflow: hidden;
   }
 }
 
